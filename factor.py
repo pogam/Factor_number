@@ -1,4 +1,6 @@
 from __future__ import print_function
+from builtins import input
+from builtins import range
 import numpy as np 
 
 # Python Program to find the factors of a number
@@ -23,6 +25,6 @@ def get_factor(x):
 
 if __name__ == '__main__':
 # take input from the user
-    num = int(input("Enter a number: "))
+    num = int(eval(input("Enter a number: ")))
 
     print_factors(num)
